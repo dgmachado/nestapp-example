@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nest build",
     "build-rspack": "rspack build",
-    "serve-rspack": "rspack serve",
+    "serve-rspack": "node dist/main.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -25,6 +25,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nrwl/rspack": "15.9.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
